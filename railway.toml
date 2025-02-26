@@ -1,6 +1,8 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "npm install"
+command = "npm install"
 
 [start]
-cmd = "node index.js"
+command = "node index.js"
+
+[deploy]
+healthcheck = "/"
